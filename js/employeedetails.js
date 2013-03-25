@@ -8,7 +8,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
 	console.log("opening database");
-    db = window.openDatabase("EmployeeDirectoryDB", "1.0", "PhoneGap Demo", 200000);
+    db = window.openDatabase("EmployeeDirectoryDB", "1.1", "Employee DB", 1000000);
 	console.log("database opened");
     db.transaction(getEmployee, transaction_error);
 }
